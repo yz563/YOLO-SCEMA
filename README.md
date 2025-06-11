@@ -1,5 +1,5 @@
 # YOLO-SCEMA: Efficient Multi-scale Attention fusion module combining Spatial and Channel reconstruction Convolution
-Zhuang Yang, Haiying Wang, Xiaolong Fu, Ming Hui, Xiaolong Gaoa, Kun Ning, Zufeng Fu
+Zhuang Yang, Haiying Wang, Xiaolong Fu, Ming Hui, Xiaolong Gaoa, Kun Ning, Zufeng Fu*
 
 Nanyang Normal University, Department of Artificial Intelligence and Software Engineering, Nanyang, China
 Collaborative Innovation Center of Intelligent Explosion-proof Equipment, Henan Province, China
