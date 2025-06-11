@@ -1,4 +1,9 @@
-# YOLO-SCEMA
 # YOLO-SCEMA: Efficient Multi-scale Attention fusion module combining Spatial and Channel reconstruction Convolution
+Zhuang Yang, Haiying Wang, Xiaolong Fu, Ming Hui, Xiaolong Gaoa, Kun Ning, Zufeng Fu
+
+Nanyang Normal University, Department of Artificial Intelligence and Software Engineering, Nanyang, China
+Collaborative Innovation Center of Intelligent Explosion-proof Equipment, Henan Province, China
+
+> **Abstract:** * Convolutional Neural Networks (CNNs) have achieved significant performance in various computer vision tasks, but at the cost of enormous computing resources. Most existing methods either introduce more complex models that bring heavier computational burden, or ignore the problem of missed and false detections caused by large-scale changes in YOLO object detection tasks in dense scenes. To alleviate this dilemma, this paper proposes a lightweight and efficient multiscale attention fusion module (SCEMA) by combining spatial and channel reconstruction convolution with an efficient attention mechanism and adds the module to the YOLOV8 network structure named YOLO-SCEMA. SCEMA adopts a parallel processing strategy, with the left branch performing feature refinement operations through spatial and channel reconstruction units to reduce redundant calculations, and the right branch effectively integrating features of different scales through feature grouping and cross-spatial learning, enhancing the model's understanding of multiscale image content and improving its performance in handling complex image structures. The experimental results on the open source datasets FYP, VisDrone2019 and ExDark show that YOLO-SCEMA has increased the map score by 1.5\%, 1.33\%, and 1.53\% compared to the YOLOv8 benchmark while reducing the parameter and computational complexity by 36.9\% and 8.6\%, respectively. The experimental results demonstrate that our proposed method reduces the complexity and computational cost of the model by reducing redundant features. * 
 
 At present, only partial code and data have been uploaded, and the complete code and data will be made public after the paper is published.
