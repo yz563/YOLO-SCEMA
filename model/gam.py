@@ -34,10 +34,4 @@ class GAM_Attention(nn.Module):
         return out
 
 
-# 输入 N C HW,  输出 N C H W
-if __name__ == '__main__':
-    x = torch.randn(1, 64, 20, 20)
-    b, c, h, w = x.shape
-    net = GAM_Attention(in_channels=c)
-    y = net(x)
-    print(y.size())
+
