@@ -32,11 +32,3 @@ class ECAAttention(nn.Module):
         y = self.sigmoid(y)  # bs,1,c
         y = y.permute(0, 2, 1).unsqueeze(-1)  # bs,c,1,1
         return x * y.expand_as(x)
-
-
-# 输入 N C H W,  输出 N C H W
-if __name__ == '__main__':
-    block = ECAAttention(kernel_size=3)
-    input = torch.rand(1, 64, 64, 64)
-    output = block(input)
-    print(input.size(), output.size())
