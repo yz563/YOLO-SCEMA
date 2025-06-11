@@ -31,10 +31,3 @@ class EMA(nn.Module):
         weights = (torch.matmul(x11, x12) + torch.matmul(x21, x22)).reshape(b * self.groups, 1, h, w)
         return (group_x * weights.sigmoid()).reshape(b, c, h, w)
 
-
-# 输入 N C HW,  输出 N C H W
-if __name__ == '__main__':
-    block = EMA(64).cuda()
-    input = torch.rand(1, 64, 64, 64).cuda()
-    output = block(input)
-    print(input.size(), output.size())
